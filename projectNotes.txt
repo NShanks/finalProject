@@ -1,0 +1,42 @@
+what do i have right now?
+
+json of the # of teams, # of players per team, # of games, # of low games to drop, boolean warzone or not
+
+
+what do i want it to be?
+json with objects
+example: i dont want the # of teams. i want a team variable? with the # of teams as empty objects
+
+rn
+teams = 30
+what i want
+teams = [
+	{team1: ['', '', '']}
+	{team2: ['', '', '']}
+	...
+	{team30: ['', '', '']}
+] 
+
+teams = [
+	['', '', '']
+	['', '', '']
+	...
+	['', '', '']
+]
+
+teams = {
+	team1: ['', '', ''],
+	team2: ['', '', ''],
+	...
+	team30: ['', '', '']
+} for loop team + incrementing number set to empty list `${i}` based on the team number
+
+
+but the players need to be editable and also be able to match up with the warzone json
+
+warzone json looks like this
+data['allPlayers']['player']['username']
+data is an object
+allPlayers is a LIST of unnamed? objects
+player is an object within the unnamed? object
+playerStats an the object before the player object
